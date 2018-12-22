@@ -1,0 +1,10 @@
+/* Start Navbar */
+.pm-logo {
+  background-image: url(../images/paymestore-logo.png);
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 29px;
+}
+/* End Navbar */
