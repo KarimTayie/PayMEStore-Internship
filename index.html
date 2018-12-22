@@ -11,25 +11,60 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Start Navbar -->
-  <nav class="navbar navbar-default bg-white header-nav">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="/" class="navbar-brand">
-          <i class="pm-logo"></i>
-        </a>
+  <header>
+    <!-- Start Topbar -->
+    <div class="top-bar"></div>
+    <!-- End Topbar -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-default bg-white">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">
+            <i class="pm-logo"></i>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a data-toggle="modal" data-target="#signIn"
+                     class="login js-login-trigger btn btn-default btn-sm nav-item__button" id="signIn_button">
+                    Login
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.paymestore.co/signup/buyer"
+                      class="login js-login-trigger btn btn-default btn-sm nav-item__button" id="signUp_button"
+                      onclick="logBuyerSignupPageEvent()">
+                    Buyer Sign up
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.paymestore.co/faq"
+                      class="login js-login-trigger btn btn-default btn-sm nav-item__button">
+                    FAQ
+                  </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-    </div>
-  </nav>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+  </header>
   
+  <!-- jQuery JS file -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap JS file -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

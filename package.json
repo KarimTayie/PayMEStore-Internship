@@ -9,6 +9,7 @@
   "author": "Karim Sherif",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.4.0"
+    "bootstrap": "^3.4.0",
+    "jquery": "^3.3.1"
   }
 }
