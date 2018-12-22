@@ -11,11 +11,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Start Header -->
   <header>
     <!-- Start Topbar -->
     <div class="top-bar"></div>
     <!-- End Topbar -->
-    <!-- Start Navbar -->
+    
     <nav class="navbar navbar-default bg-white">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,9 +61,111 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <!-- End Navbar -->
+    
   </header>
-  
+  <!-- End Header -->
+  <!-- Start Invoice -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 invoice">
+        <!-- Start Invoice Header -->
+        <div class="invoice-header">
+          <header class="text-center text-uppercase text-bold">
+            <h1>Invoice</h1>
+          </header>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="thumbnail invoice-header__thumbnail text-center">
+                <img src="./images/payme-logo.png" alt="PayMe logo" class="img-responsive img-thumbnail invoice-header__logo">
+                <div class="caption">
+                  <h2>
+                    <a href="/">PayMeStore</a>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="table-responsive">
+                <table class="invoice-header__table table-bordered">
+                  <tbody>
+                    <tr>
+                        <th>
+                            <span>Invoice #</span>
+                        </th>
+                        <td>
+                            <span>12345</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span>Issuance Date</span>
+                        </th>
+                        <td>
+                            <span>2018-12-22</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span>Due Date</span>
+                        </th>
+                        <td>
+                            <span>2019-06-30</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span>Total Amount</span>
+                        </th>
+                        <td>
+                            <span id="">2200</span>
+                            <span> EGP</span>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 md">
+              <div class="table-responsive">
+                <table class="invoice-header__table invoice-header__table--two table-bordered">
+                  <thead>
+                    <tr>
+                      <th>
+                        <span>Item</span>
+                      </th>
+                      <th>
+                        <span>Price</span>
+                      </th>
+                      <th>
+                        <span>Quantity</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="break-word-all">
+                        <span>Interns of PayMe</span>
+                      </td>
+                      <td class="break-word-all">
+                        <span data-prefix>1100 </span><span> EGP</span>
+                      </td>
+                      <td class="break-word-all">
+                        <span>2</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Invoice Header -->
+      </div>
+    </div>
+  </div>
+  <!-- End Invoice -->
   <!-- jQuery JS file -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap JS file -->

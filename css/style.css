@@ -10,7 +10,10 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-/* Start Navbar */
+/* Start Header */
+header {
+  margin: 0 0 3em;
+}
 nav .pm-logo {
   background-image: url(../images/paymestore-logo.png);
   background-size: cover;
@@ -39,4 +42,68 @@ nav .nav-item .nav-item__button {
   border: 1px solid #c0c0c0;
   color: #333 !important;
 }
-/* End Navbar */
+/* End Header */
+/* Start Invoice Header */
+.invoice {
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.invoice-header h1 {
+  background: #000;
+  border-radius: 0.25em;
+  color: #FFF;
+  margin: 0 0 1em;
+  padding: 0.5em 0;
+  letter-spacing: 18px;
+  font-weight: bold
+}
+
+.invoice-header__thumbnail {
+  padding-top: 20px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.invoice-header__logo {
+  height: 135px !important;
+  padding: 20px 30px;
+}
+
+.invoice-header__thumbnail h2 a {
+  color: #000 ;
+}
+
+.invoice-header__table {
+  margin: auto;
+  width: 80%;
+  margin-top: 16%;
+}
+
+.invoice-header__table th {
+  width: 40%;
+  background: #EEE;
+  border: 1px solid #BBB !important;
+  border-radius: 0.25em;
+  font-weight: 100;
+}
+
+.invoice-header__table--two {
+  margin-top: 15px;
+  width: 90%;
+}
+
+.invoice-header__table--two th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  width: 33.3333%;
+}
+/* End Invoice Header */
