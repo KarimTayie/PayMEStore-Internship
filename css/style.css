@@ -53,6 +53,10 @@ nav .nav-item .nav-item__button {
   padding-bottom: 20px;
 }
 
+.invoice-header {
+  margin-bottom: 30px;
+}
+
 .invoice-header h1 {
   background: #000;
   border-radius: 0.25em;
@@ -107,3 +111,86 @@ nav .nav-item .nav-item__button {
   width: 33.3333%;
 }
 /* End Invoice Header */
+/* Start Invoice Body */
+.invoice-body {
+
+}
+
+.invoice-body h1 {
+  border-color: #999;
+  border-bottom-style: solid;
+  border-width: 0 0 1px;
+}
+
+.invoice-body__paragraph {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.invoice-body__payment {
+  padding: 50px 0;
+}
+
+.invoice-body__method,
+.invoice-body__promo {
+  padding: 0;
+  border-radius: 10px;
+}
+
+.invoice-body__promo .caption {
+  margin: 60px auto;
+}
+
+.invoice-body__method h3,
+.invoice-body__promo h3 {
+  background: #eee;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0;
+  color: #777;
+  font-size: 18px;
+}
+
+.invoice-body__promo input {
+  font-size: 17px;
+}
+
+.invoice-body__select {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  line-height: 3;
+}
+
+.invoice-body__select img {
+  width: 90px;
+  height: auto;
+}
+
+.invoice-body__total {
+  font-size: 20px;
+  color: #253858;
+  padding: 0px 15px 20px 15px;
+  font-weight: 600;
+  line-height: 1.4
+}
+/* End Invoice Body */
+/* Utilities */
+.bRadiud-0 {
+  border-radius: 0;
+}
+
+.select-border {
+  border: 2px solid #bebebe;
+  border-radius: 10px;
+}
+
+.select-padding {
+  padding-top: 3px;
+  padding-left: 10px;
+  border-right: 2px solid #bebebe;
+}
+
+.select-img-padding {
+  padding-top: 4px;
+}
