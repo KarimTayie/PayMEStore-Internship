@@ -90,6 +90,14 @@ nav .nav-item .nav-item__button {
   margin-top: 16%;
 }
 
+@media (max-width: 767px) {
+  .invoice-header__table {
+    border: 1px solid #ddd !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 .invoice-header__table th {
   width: 40%;
   background: #EEE;
@@ -178,6 +186,18 @@ nav .nav-item .nav-item__button {
 .invoice-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.4);
   padding-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .invoice-footer__list--one {
+    width: 435px;
+    margin: auto;
+  }
+
+  .invoice-footer__list--two {
+    width: 240px;
+    margin: auto
+  }
 }
 
 .invoice-footer__item {
