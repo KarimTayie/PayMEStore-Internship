@@ -11,9 +11,6 @@
   background-size: 100% auto;
 }
 /* Start Header */
-header {
-  margin: 0 0 3em;
-}
 nav .pm-logo {
   background-image: url(../images/paymestore-logo.png);
   background-size: cover;
@@ -51,6 +48,8 @@ nav .nav-item .nav-item__button {
   box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .invoice-header {
@@ -113,7 +112,7 @@ nav .nav-item .nav-item__button {
 /* End Invoice Header */
 /* Start Invoice Body */
 .invoice-body {
-
+  padding: 50px 0;
 }
 
 .invoice-body h1 {
@@ -175,9 +174,38 @@ nav .nav-item .nav-item__button {
   line-height: 1.4
 }
 /* End Invoice Body */
+/* Start Invoice Footer */
+.invoice-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  padding-top: 20px;
+}
+
+.invoice-footer__item {
+  float: left;
+}
+
+.invoice-footer__item--right {
+  float: right;
+}
+
+.invoice-footer__link {
+  margin-left: 10px;
+  margin-right: 25px;
+  text-decoration: none;
+  color: #bebebe;
+}
+
+.invoice-footer__link:hover {
+  text-decoration: none;
+}
+/* End Invoice Footer */
 /* Utilities */
 .bRadiud-0 {
   border-radius: 0;
+}
+
+.padding-top-8 {
+  padding-top: 8px;
 }
 
 .select-border {
@@ -194,3 +222,16 @@ nav .nav-item .nav-item__button {
 .select-img-padding {
   padding-top: 4px;
 }
+
+.social {
+  padding: 3px 6px;
+  border: 1px solid black;
+}
+
+/* .social-f:hover {
+  color: #3b5998;
+}
+
+.social-l:hover {
+  color: #0077b5;
+} */
