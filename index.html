@@ -56,19 +56,122 @@
               </form>
             </div>
             <div class="col-sm-12">
-              <a data-toggle="modal" data-target="#forgetPassword" data-dismiss="modal">Forgot your password?</a>
+              <a data-toggle="modal" data-target="#forgetPassword" data-dismiss="modal" class="cursor-pointer">Forgot your password?</a>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <p>
-            Don't have an account? <a data-toggle="modal" data-target="#signUp" data-dismiss="modal"> Sign up</a>
+            Don't have an account? <a data-toggle="modal" data-target="#signUp" data-dismiss="modal" class="cursor-pointer"> Sign up</a>
           </p>
         </div>
       </div>
     </div>
   </div>
   <!-- End Login Modal -->
+  <!-- Start Signup Modal -->
+  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog text-center signUp-modal" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2 class=" text-center" style="font-size: 20px; margin: 10px;">Sign Up</h2>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="h1">Create a New Account</p>
+                <p>
+                  Let's set up your account. Already have one?
+                  <a data-toggle="modal" data-target="#signIn" data-dismiss="modal" class="cursor-pointer">Sign in here.</a>
+                </p>
+                <form action="https://www.paymestore.co/register" method="post"> 
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="fname" value="" placeholder="First name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="lname" value="" placeholder="Last name">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" name="mobile" value="" type="text" placeholder="Mobile number">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="email" name="email" value="" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                  </div>
+                  <div class="checkbox">
+                    <label for="terms">
+                      <input type="checkbox" name="term"> I accept the <a href="https://www.paymestore.co/terms">Terms and Conditions</a>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-success" name="submit_register">Join PayMe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Signup Modal -->
+  <!-- Start Forgot password Modal -->
+  <div class="modal fade" id="forgetPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog forgot-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class=" text-center" style="font-size: 20px; margin: 10px;">Forget Password</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="grey-shadow">
+              <div class="col-md-6 col-sm-12 modal-social__wrapper text-center">
+                <a class="modal-social__item" href="">
+                  <span class="modal-social__logo modal-social__logo--facebook"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></span>
+                  <span class="modal-social__connect modal-social__connect--facebook">Continue with Facebook</span>
+                </a>
+                <a class="modal-social__item" href="">
+                  <span class="modal-social__logo modal-social__logo--google"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                  <span class="modal-social__connect modal-social__connect--google">Continue with Gmail</span>
+                </a>
+              </div>
+              <div class="col-md-6 col-sm-12 text-center">
+                <form class="form" method="post" action="https://www.paymestore.co/login">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="E-mail" value="" disabled>
+                  </div>
+                  <div class="form-group">
+                      <input type="password" class="form-control" name="password" placeholder="Password" disabled>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="col-sm-12">
+              <div class="form-inline text-center">
+                <div class="form-group">
+                  <input class="form-control" type="email" name="email" value="" placeholder="E-mail">
+                </div>
+                <button type="submit" class="btn btn-danger">Send Password Reset Link</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>
+            Don't have an account? <a data-toggle="modal" data-target="#signUp" data-dismiss="modal" class="cursor-pointer"> Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Forgot password Modal -->
   <!-- Start Header -->
   <header>
     <!-- Start Topbar -->
