@@ -11,8 +11,64 @@
   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
   <!-- Style CSS file -->
   <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+      <script src="./node_modules/html5shiv/dist/html5shiv.min.js"></script>
+      <script src="./node_modules/respond.js/dest/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
+  <!-- Start Login Modal -->
+  <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog signIn-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 class=" text-center" id="myModalLabel" style="font-size: 20px; margin: 10px;">Sign In</h2>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 modal-social__wrapper text-center">
+              <a class="modal-social__item" href="https://www.paymestore.co/social/auth/redirect/facebook">
+                <span class="modal-social__logo modal-social__logo--facebook"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></span>
+                <span class="modal-social__connect modal-social__connect--facebook">Continue with Facebook</span>
+              </a>
+              <a class="modal-social__item" href="https://www.paymestore.co/social/auth/redirect/google">
+                <span class="modal-social__logo modal-social__logo--google"><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+                <span class="modal-social__connect modal-social__connect--google">Continue with Gmail</span>
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center">
+              <form class="form" method="post" action="https://www.paymestore.co/login">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="E-mail" value="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                  <label for="remember_me">
+                    <input type="checkbox" name="remember_me"> Remember Me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+            <div class="col-sm-12">
+              <a data-toggle="modal" data-target="#forgetPassword" data-dismiss="modal">Forgot your password?</a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>
+            Don't have an account? <a data-toggle="modal" data-target="#signUp" data-dismiss="modal"> Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Login Modal -->
   <!-- Start Header -->
   <header>
     <!-- Start Topbar -->
@@ -208,10 +264,10 @@
                         </div>
                       </div>
                       <div class="col-md-12">
-                        <div class="col-md-6">
+                        <div class="col-md-offset-2 col-md-4">
                           <p class="invoice-body__total">Total : <span>2200</span> EGP</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                           <button type="submit" class="btn btn-info bRadiud-0">Proceed to Payment</button>
                         </div>
                       </div>

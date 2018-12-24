@@ -199,6 +199,83 @@ nav .nav-item .nav-item__button {
   text-decoration: none;
 }
 /* End Invoice Footer */
+/* Start SignIn Modal */
+.signIn-modal {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.modal-social__wrapper {
+  border-right: 1px solid #eee;
+}
+
+.modal-social__item {
+  height: 56px;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-social__item:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.modal-social__logo {
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 58px;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 22%;
+  position: absolute;
+  left: 0;
+}
+
+.modal-social__logo--facebook {
+  background-color: #344D7C;
+}
+
+.modal-social__logo--google {
+  background-color: #ff4343;
+}
+
+.modal-social__connect {
+  line-height: 58px;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  right: 0px;
+}
+
+.modal-social__connect--facebook {
+  background-color: #3D5C97;
+}
+
+.modal-social__connect--facebook:hover {
+  background-color: #2e4e8c;
+}
+
+.modal-social__connect--google {
+  background-color: #ff5d5d; 
+}
+
+.modal-social__connect--google:hover {
+  background-color: #ff3c3c;
+}
+/* End SignIn Modal */
 /* Utilities */
 .bRadiud-0 {
   border-radius: 0;
